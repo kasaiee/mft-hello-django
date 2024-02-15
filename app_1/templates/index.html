@@ -1,0 +1,9 @@
+<ul>
+  {% for post in post_list %}
+    <li>{{ post }} - {{ post.is_published }}</li>
+    {% empty %}
+    No Post!!
+  {% endfor %}
+  
+  {% if not post_list %}No Post{% endif %}
+</ul>
